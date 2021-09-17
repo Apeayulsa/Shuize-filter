@@ -32,8 +32,8 @@ def main(ap,path,flag=0):
             obj = xlrd.open_workbook(pathL+name)
             tail(obj,name,path,pathL)
         else:
-            obj = xlrd.open_workbook(path+name)
-            tail(obj,name,path)
+            obj = xlrd.open_workbook(path+i)
+            tail(obj,i,path)
         
 
 def tail(obj,name,path,pathL=""):
