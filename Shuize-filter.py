@@ -43,7 +43,7 @@ def tail(obj,name,path,pathL=""):
     except:
         return
     status_code = sheet.col_values(1)
-    if obj.sheet_names()[-2] != u'\u5b58\u6d3b\u7f51\u7ad9\u6807\u9898':
+    if obj.sheet_names()[-2] == u'\u6f0f\u6d1e':
         popen('mv %s%s %sresult-new/issue' % (pathL,name,path))
         print("%s\t Allowed in issue!" % (name))
         return
